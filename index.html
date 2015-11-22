@@ -1,15 +1,6 @@
 <html>
     <head>
         <script src="funfacts.js"></script>
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-        </script>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="animate.css">
@@ -37,6 +28,15 @@
         <meta property="og:image"         content="http://raw.githubusercontent.com/japesinator/funfacts.js/gh-pages/grouponcat.png" />
     </head>
     <body style="font-family: Comic Sans MS; background-image: url(http://raw.githubusercontent.com/japesinator/funfacts.js/gh-pages/grouponcat.png); background-repeat: repeat;">
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
         <div style="width: 60%; margin-left: auto; margin-right: auto; text-align: center; background-color: #fff; padding: 15px;">
             <div style="width: 40%; margin-left: auto; margin-right: auto;">
                 <h2 class="wow flip">FunFacts.js</h2>
@@ -74,6 +74,7 @@
             <div class="fb-share-button" data-href="http://writes.co.de/funfacts.js/" data-layout="button_count"></div>
             <a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <iframe src="https://ghbtns.com/github-btn.html?user=japesinator&repo=funfacts.js&type=star&count=true" frameborder="0" scrolling="0" width="85px" height="20px"></iframe>
         </div>
     </body>
 </html>
