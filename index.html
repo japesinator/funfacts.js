@@ -7,6 +7,16 @@
     <script>
     new WOW().init();
     </script>
+    <style>
+    .rainbow {
+      background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+      background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: underline;
+    }
+    </style>
     <body style="font-family: Comic Sans MS; background-image: url(http://raw.githubusercontent.com/japesinator/funfacts.js/gh-pages/grouponcat.png); background-repeat: repeat;">
         <div style="width: 60%; margin-left: auto; margin-right: auto; text-align: center; background-color: #fff; padding: 15px;">
             <div style="width: 40%; margin-left: auto; margin-right: auto;">
@@ -22,6 +32,7 @@
                 </div>
             </div>
             <br>
+            <h2><a href="https://github.com/japesinator/funfacts.js/archive/master.zip" class="rainbow">Download FunFacts.js</a></h2>
             <div style="border-bottom: solid; border-bottom-width: 1px; border-color: black; text-align: left;">
                 <h2 class="wow shake">Fun Facts About FunFacts.js:</h2>
             </div>
@@ -31,7 +42,7 @@
                 <h2 class="wow rollIn"><a id="Where_do_the_fun_facts_come_from_How_can_I_know_theyre_actually_facts_6"></a>Where do the fun facts come from? How can I know they're actually facts?</h2>
                 <p class="wow bounce"><a href="https://www.reddit.com/r/funfacts">Reddit</a>. We scrape the top twenty when you load the webpage. There's no guarantee, but let's be honest, neither of us really cares.</p>
                 <h2 class="wow flip"><a id="How_should_I_use_this_10"></a>How should I use this?</h2>
-                <p class="wow pulse">In production. #yolo.</p>
+                <p class="wow pulse">In production. #yolo. Just add <code>&lt;script src="funfacts.js"&gt;&lt;/script&gt;</code> to the top of your html file, before any JS that could throw an error.</p>
                 <h2 class="wow bounceInRight"><a id="Why_should_I_use_this_14"></a>Why should I use this?</h2>
                 <p class="wow swing center">You probably shouldn't. Unless, you know, maybe you just don't want to suffer the embarassment of a long list of error messages showing up in your JS console.</p>
                 <h2 class="wow shake"><a id="Why_would_you_make_this_18"></a>Why does this website look like it was made in the 1990's?</h2>
