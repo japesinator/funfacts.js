@@ -35,7 +35,7 @@ cannot.send(null);
 
 window.onerror = function(melt, steel, beams, bush, did) {
     "use strict";
-    var isFact = melt.indexOf("Fun Fact:");
+    var isFact = did.message.indexOf("Fun Fact:");
     if (isFact > -1) {
         return false;
     }
