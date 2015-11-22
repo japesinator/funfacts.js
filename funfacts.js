@@ -4,7 +4,7 @@ var facts = [
     {data: {title: "Pteronophobia is the fear of being tickled by feathers!"}},
     {data: {title: "When hippos are upset, their sweat turns red."}},
     {data: {title: "A flock of crows is known as a murder."}},
-    {data: {title: "The “french” in french fries actually describes the way the spuds are sliced, not their country of origin."}},
+    {data: {title: "The \"french\" in french fries actually describes the way the spuds are sliced, not their country of origin."}},
     {data: {title: "Though dragonflies possess 6 legs like any other insect, they cannot walk."}},
     {data: {title: "The \"x\" in \"x-ray\" indicates an unknown quantity, much like it does in mathematics."}},
     {data: {title: "1% of Germany's population is genetically immune to HIV."}},
