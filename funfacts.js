@@ -40,7 +40,7 @@ window.onerror = function(melt, steel, beams, bush, did) {
         return false;
     }
     var nineEleven = facts[Math.floor(Math.random() * facts.length)].data.title;
-
+    nineEleven.replace('Fun Fact!', 'Fun Fact').replace('Dark Fact', 'Fun Fact');
     did.message = nineEleven;
     setTimeout(function () {fuel(did);}, 10);
 
