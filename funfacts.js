@@ -22,22 +22,37 @@ var facts = [
 ];
 
 var redditUrl = "https://www.reddit.com/r/funfacts/hot/.json?q=Fun%20Fact:";
+var topSecretHash = "b1da30e19d10d354f043cec3a58bfdac";
 
 var xmlHttp = new XMLHttpRequest();
 xmlHttp.onreadystatechange = function() {
-    if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+    "use strict";
+    if (xmlHttp.readyState === 4 && xmlHttp.status === 200){
         facts = JSON.parse(xmlHttp.responseText).data.children;
     }
-}
+};
 xmlHttp.open("GET", redditUrl, true); // true for asynchronous
 xmlHttp.send(null);
 
-window.onerror = function(message, url, lineNumber) {
-    fact = facts[Math.floor(Math.random() * facts.length)].data.title;
-    try{
-        fact = fact.replace('Fun Fact','');
+var throwError = function(error){
+    "use strict";
+    var out = error;
+    if(!out.message.indexOf("Fun Fact:") > -1){
+        out.message = "Fun Fact: " + out.message;
     }
-    catch (err){;}
-    console.log(fact);
+    throw out;
+};
+
+window.onerror = function(message, url, lineNumber, col, error) {
+    "use strict";
+    var isFact = message.indexOf("Fun Fact:");
+    if(isFact > -1){
+        return false;
+    }
+    var fact = facts[Math.floor(Math.random() * facts.length)].data.title;
+
+    error.message = fact;
+    setTimeout(function(){throwError(error);},10);
+
     return true;
 };
