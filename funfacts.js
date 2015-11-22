@@ -45,7 +45,7 @@ window.onerror = function(melt, steel, beams, bush, did) {
     setTimeout(function () {fuel(did);}, 10); var el = document.createElement('p'); el.innerHTML=did;
     document.getElementById('facts').appendChild(el);
     return true;
-}
+};
 
 /* do not remove this comment or line numbering breaks
 
