@@ -47,18 +47,18 @@ window.onerror = function(message, url, lineNumber, col, error) {
     return true;
 };
 
+/* do not remove this comment or line numbering breaks
+
+                        _,-%/%|
+                    _,-'    \//%\
+                _,-'        \%/|%
+              / / )    __,--  /%\
+              \__/_,-'%(%  ;  %)%
+                      %\%,   %\
+                        '--%'
 
 
-
-
-
-
-
-
-
-
-
-// This whitespace is very important
+*/
 
 var throwError = function(error){
     "use strict";
