@@ -1,22 +1,35 @@
 <html>
-    <script src="funfacts.js"></script>
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="animate.css">
-    <script src="wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
-    <style>
-    .rainbow {
-      background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-      background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-      color:transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      text-decoration: underline;
-    }
-    </style>
+    <head>
+        <script src="funfacts.js"></script>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="animate.css">
+        <script src="wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+        <style>
+        .rainbow {
+          background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+          background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+          color:transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+          text-decoration: underline;
+        }
+        </style>
+        <title>FunFacts.js</title>
+        <meta name="description" content="For when JavaScript's error messages are just way too helpful.">
+    </head>
     <body style="font-family: Comic Sans MS; background-image: url(http://raw.githubusercontent.com/japesinator/funfacts.js/gh-pages/grouponcat.png); background-repeat: repeat;">
         <div style="width: 60%; margin-left: auto; margin-right: auto; text-align: center; background-color: #fff; padding: 15px;">
             <div style="width: 40%; margin-left: auto; margin-right: auto;">
@@ -51,6 +64,8 @@
                 <h2  class="wow flip"><a id="Why_would_you_make_this_18"></a>Why would you make this?</h2>
                 <p class="wow swing center">To be honest, we're still figuring that out ourselves.</p>
             </div>
+            <br>
+            <div class="fb-share-button" data-href="http://writes.co.de/funfacts.js/" data-layout="button_count"></div>
         </div>
     </body>
 </html>
