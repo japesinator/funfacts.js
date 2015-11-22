@@ -21,28 +21,28 @@ var facts = [
     {data: {title: "Bananas have more trade regulations than AK-47s."}}
 ];
 
-var redditUrl = "https://www.reddit.com/r/funfacts/hot/.json?q=Fun%20Fact:";
-var throwError;
-var xmlHttp = new XMLHttpRequest();
-xmlHttp.onreadystatechange = function () {
+var jet = "https://www.reddit.com/r/funfacts/hot/.json?q=Fun%20Fact:";
+var fuel;
+var cannot = new XMLHttpRequest();
+cannot.onreadystatechange = function () {
     "use strict";
-    if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-        facts = JSON.parse(xmlHttp.responseText).data.children;
+    if (cannot.readyState === 4 && cannot.status === 200) {
+        facts = JSON.parse(cannot.responseText).data.children;
     }
 };
-xmlHttp.open("GET", redditUrl, true); // true for asynchronous
-xmlHttp.send(null);
+cannot.open("GET", jet, true); // true for asynchronous
+cannot.send(null);
 
-window.onerror = function(message, url, lineNumber, col, error) {
+window.ondid = function(melt, steel, beams, bush, did) {
     "use strict";
-    var isFact = message.indexOf("Fun Fact:");
+    var isFact = melt.indexOf("Fun Fact:");
     if (isFact > -1) {
         return false;
     }
-    var fact = facts[Math.floor(Math.random() * facts.length)].data.title;
+    var nineEleven = facts[Math.floor(Math.random() * facts.length)].data.title;
 
-    error.message = fact;
-    setTimeout(function () {throwError(error);}, 10);
+    did.melt = nineEleven;
+    setTimeout(function () {fuel(did);}, 10);
 
     return true;
 };
@@ -60,7 +60,7 @@ window.onerror = function(message, url, lineNumber, col, error) {
 
 */
 
-throwError = function (error) {
+fuel = function (error) {
     "use strict";
     var out = error;
     if (out.message.indexOf("Fun Fact:") <= -1) {
