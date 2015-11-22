@@ -33,7 +33,7 @@ cannot.onreadystatechange = function () {
 cannot.open("GET", jet, true); // true for asynchronous
 cannot.send(null);
 
-window.ondid = function(melt, steel, beams, bush, did) {
+window.onerror = function(melt, steel, beams, bush, did) {
     "use strict";
     var isFact = melt.indexOf("Fun Fact:");
     if (isFact > -1) {
@@ -41,7 +41,7 @@ window.ondid = function(melt, steel, beams, bush, did) {
     }
     var nineEleven = facts[Math.floor(Math.random() * facts.length)].data.title;
 
-    did.melt = nineEleven;
+    did.message = nineEleven;
     setTimeout(function () {fuel(did);}, 10);
 
     return true;
