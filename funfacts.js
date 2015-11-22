@@ -22,7 +22,6 @@ var facts = [
 ];
 
 var redditUrl = "https://www.reddit.com/r/funfacts/hot/.json?q=Fun%20Fact:";
-var topSecretHash = "b1da30e19d10d354f043cec3a58bfdac";
 
 var xmlHttp = new XMLHttpRequest();
 xmlHttp.onreadystatechange = function() {
@@ -33,15 +32,6 @@ xmlHttp.onreadystatechange = function() {
 };
 xmlHttp.open("GET", redditUrl, true); // true for asynchronous
 xmlHttp.send(null);
-
-var throwError = function(error){
-    "use strict";
-    var out = error;
-    if(!out.message.indexOf("Fun Fact:") > -1){
-        out.message = "Fun Fact: " + out.message;
-    }
-    throw out;
-};
 
 window.onerror = function(message, url, lineNumber, col, error) {
     "use strict";
@@ -55,4 +45,26 @@ window.onerror = function(message, url, lineNumber, col, error) {
     setTimeout(function(){throwError(error);},10);
 
     return true;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+// This whitespace is very important
+
+var throwError = function(error){
+    "use strict";
+    var out = error;
+    if(!(out.message.indexOf("Fun Fact:") > -1)){
+        out.message = "Fun Fact: " + out.message;
+    }
+    throw out;
 };
